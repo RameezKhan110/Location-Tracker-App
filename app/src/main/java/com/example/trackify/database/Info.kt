@@ -1,4 +1,4 @@
-package com.example.trackify
+package com.example.trackify.database
 
 import androidx.room.PrimaryKey
 

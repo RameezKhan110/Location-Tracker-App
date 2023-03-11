@@ -1,4 +1,4 @@
-package com.example.trackify
+package com.example.trackify.database
 
 import androidx.room.Dao
 import androidx.room.Insert

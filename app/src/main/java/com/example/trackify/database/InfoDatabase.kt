@@ -1,4 +1,4 @@
-package com.example.trackify
+package com.example.trackify.database
 
 import android.content.Context
 import androidx.room.Room
@@ -11,7 +11,7 @@ abstract class InfoDatabase : RoomDatabase() {
     companion object{
 
         private var INSTANCE : InfoDatabase? = null
-        fun getDatabase(context: Context) : InfoDatabase{
+        fun getDatabase(context: Context) : InfoDatabase {
             if(INSTANCE == null){
                 synchronized(this){
                     INSTANCE = Room.databaseBuilder(context, InfoDatabase::class.java, "my_tracks").build()
